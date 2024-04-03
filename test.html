@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Apply flexbox to the second-div */
+        .second-div {
+            display: flex; /* Use flexbox */
+            width: 100%; /* Ensure full width of the page */
+            background-color: lightblue; /* Background color applied to the parent */
+        }
+
+        /* Set each div to take half of the width */
+        .second-sub1,
+        .second-sub2 {
+            flex: 1; /* Each div takes 50% of the available space */
+            padding: 20px; /* Padding for styling */
+        }
+
+        /* Flexbox for second-sub1 */
+        .second-sub1 {
+            display: flex;
+            flex-direction: row; /* Arrange children horizontally */
+            align-items: stretch; /* Stretch items to equal height */
+        }
+
+        /* Flexbox for each column */
+        .column {
+            display: flex;
+            flex-direction: column; /* Arrange children vertically */
+            justify-content: space-between; /* Space between items */
+            flex: 1; /* Each column takes equal height */
+        }
+
+        /* Adjust image styles */
+        .column img {
+            max-width: 100%; /* Ensure images don't exceed column width */
+            height: 100%; /* Set image height to 100% of container height */
+            object-fit: cover; /* Ensure images cover their container */
+            margin-bottom: 5px; /* Add some spacing between images */
+        }
+    </style>
+</head>
+<body>
+
+<div class="second-div">
+    <div class="second-sub1">
+        <div class="column">
+            <img src="images/pexels-eva-bronzini-6141651.jpg" alt="Image 1">
+            <img src="images/pexels-mister-mister-3434523.jpg" alt="Image 2">
+        </div>
+        <div class="column">
+            <img src="images/pexels-rachel-claire-6752433.jpg" alt="Image 3">
+        </div>
+    </div>
+    <div class="second-sub2">
+        <div class="second-sub-box">
+            <p class="line1">LOREM IPSUM</p>
+            <p class="line2">LOREM IPSUM</p>
+            <p class="line3">SET ADEMIR</p>
+            <p class="line4">Click<img src="images/icons8-arrow-30.png" alt=""></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

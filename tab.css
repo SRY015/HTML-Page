@@ -1,0 +1,158 @@
+/* tablet.css */
+
+/* Resetting default margin and padding */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for navigation bar */
+nav {
+    background-color: #ff7171;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+#menu-bar {
+    height: 30px;
+    width: 30px;
+}
+
+/* Styling for first section */
+.first-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.first-sub1 {
+    width: 100%;
+    padding: 20px;
+    text-align: center; /* Center text */
+}
+.first-paragraph{
+    text-align: center;
+}
+
+.first-sub1 button {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #ff7171;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.first-sub2 {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center; /* Center text */
+}
+
+.first-sub2 img {
+    width: 100%;
+    height: auto;
+}
+
+.first-heading {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.first-paragraph {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Styling for second section */
+.second-div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.second-sub1,
+.second-sub2 {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center; /* Center text */
+}
+
+.second-sub1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.item1 img,
+.item2 img,
+.item3 img {
+    width: 100%;
+    height: auto;
+}
+
+.second-sub-box {
+    padding: 20px;
+    background-color: #ff7171;
+    text-align: center; /* Center text */
+    margin-top: 20px;
+}
+
+.line1,
+.line4 {
+    font-size: 20px;
+    color: white;
+}
+
+.line2,
+.line3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* Adjustments for tablet screens */
+@media screen and (max-width: 992px) {
+    ul li {
+        font-size: 16px;
+        margin-right: 15px;
+    }
+
+    .first-heading {
+        font-size: 24px;
+    }
+
+    .first-paragraph {
+        font-size: 16px;
+    }
+
+    .line1,
+    .line4 {
+        font-size: 16px;
+    }
+
+    .line2,
+    .line3 {
+        font-size: 24px;
+    }
+}

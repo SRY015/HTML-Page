@@ -1,0 +1,142 @@
+/* phone.css */
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* phone.css */
+
+/* Styling for navigation bar */
+nav {
+    background-color: #ff7171;
+    display: flex;
+    justify-content: space-between; /* Add space between items */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Increase padding for better touch experience */
+}
+
+ul li {
+    list-style: none; /* Remove default list styling */
+    font-size: 18px; /* Adjust font size for mobile */
+    font-weight: bold;
+    margin-right: 10px; /* Reduce right margin */
+}
+
+#menu-bar {
+    height: 30px; /* Adjust menu bar height */
+    width: 30px; /* Adjust menu bar width */
+}
+
+
+
+/* Styling for first section */
+.first-div {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px; /* Add padding for better spacing */
+    background: linear-gradient(90deg, #fff6ae 0%, #ffd3d0 100%)
+}
+
+.first-sub1 {
+    width: 100%; /* Make the first column full width */
+    padding: 20px; /* Add padding */
+}
+
+.first-sub1 button {
+    width: 100%; /* Make button full width */
+    margin-top: 20px; /* Add space between button and text */
+    font-size: 16px; /* Adjust font size */
+    background-color: #ff7171;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.first-sub2 {
+    width: 100%; /* Make the second column full width */
+    margin-top: 20px; /* Add space between sections */
+}
+
+.first-sub2 img {
+    width: 100%; /* Make image full width */
+}
+
+.first-heading {
+    font-size: 30px; /* Adjust font size */
+    margin-bottom: 10px; /* Reduce bottom margin */
+    text-align: center; /* Center text */
+}
+
+.first-paragraph {
+    font-size: 14px; /* Adjust font size */
+    line-height: 20px; /* Adjust line height */
+    text-align: justify; /* Justify text */
+}
+
+/* Styling for second section */
+.second-div {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px; /* Add padding */
+    background: linear-gradient(90deg, #fff6ae 0%, #ffd3d0 100%)
+}
+
+.second-sub1, .second-sub2 {
+    width: 100%; /* Make both sections full width */
+    margin-top: 20px; /* Add space between sections */
+}
+
+.second-sub1 {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 10px; /* Add gap between grid items */
+}
+
+.item1 img, .item2 img {
+    width: 100%; /* Make images full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.item3 img {
+    width: 100%; /* Make image full width */
+    max-height: 300px; /* Limit maximum height */
+}
+
+.second-sub-box {
+    padding: 20px; /* Add padding */
+    background-color: #ff7171; /* Change background color */
+    text-align: center; /* Center the content horizontally */
+    margin-top: 10px; /* Add margin from the top */
+}
+
+.line1, .line4 {
+    font-size: 14px; /* Adjust font size */
+}
+.line2{
+    margin-top: 10px;
+}
+
+.line4 {
+    margin-left: 40%;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    font-size: 14px; /* Adjust font size */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.line4 img {
+    margin-left: 10px; /* Add space between text and image */
+}
+
+
+.line2, .line3 {
+    font-size: 24px; /* Adjust font size */
+    text-align: center; /* Center text */
+    margin-bottom: 10px; /* Add space between lines */
+    letter-spacing: 4px;
+}
